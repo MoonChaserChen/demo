@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>demo-duplicate-request</module>
+        <module>demo-spring</module>
     </modules>
 
 

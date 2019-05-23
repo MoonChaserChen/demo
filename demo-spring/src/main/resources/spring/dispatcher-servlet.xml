@@ -7,4 +7,5 @@
 
     <mvc:annotation-driven/>
     <context:component-scan base-package="ink.akira.demoSpring.controller"/>
+    <mvc:default-servlet-handler />
 </beans>

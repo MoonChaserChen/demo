@@ -11,6 +11,7 @@
     <modules>
         <module>demo-duplicate-request</module>
         <module>demo-spring</module>
+        <module>hello-jdk8</module>
     </modules>
 
 

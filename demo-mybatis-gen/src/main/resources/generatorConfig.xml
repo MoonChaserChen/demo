@@ -28,7 +28,7 @@
         </javaTypeResolver>
 
         <!-- 数据表对应的model层  -->
-        <javaModelGenerator targetPackage="com.fifedu.iassess.bojo.domain" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.fifedu.iassess.pojo.domain" targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -39,47 +39,12 @@
         </sqlMapGenerator>
 
         <!-- mybatis3中的mapper接口 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.fifedu.iassess.mapper"  targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.fifedu.iassess.mapper.iassess"  targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
         <!-- 数据表进行生成操作 schema:相当于库名; tableName:表名; domainObjectName:对应的DO -->
-        <table schema="iassess" tableName="assess_plan" domainObjectName="AssessPlan"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
-        <table schema="iassess" tableName="assess_plan_item" domainObjectName="AssessPlanItem"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
-        <table schema="iassess" tableName="assess_plan_module" domainObjectName="AssessPlanModule"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
-        <table schema="iassess" tableName="assess_plan_score" domainObjectName="AssessPlanScore"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
-        <table schema="iassess" tableName="assess_plan_task" domainObjectName="AssessPlanTask"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
-        <table schema="iassess" tableName="score_rule" domainObjectName="ScoreRule"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
         <table schema="iassess" tableName="score_source" domainObjectName="ScoreSource"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-        </table>
-        <table schema="iassess" tableName="score_source_rule" domainObjectName="ScoreSourceRule"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="true"
                selectByExampleQueryId="false">

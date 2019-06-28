@@ -13,6 +13,7 @@
         <module>demo-spring</module>
         <module>hello-jdk8</module>
         <module>demo-mybatis-gen</module>
+        <module>demo-dubbo-consumer</module>
     </modules>
 
 

@@ -1,6 +1,8 @@
 package ink.akira.demoSpring.pojo;
 
-public class Student {
+import org.springframework.beans.factory.DisposableBean;
+
+public class Student implements DisposableBean {
     private int id;
     private String name;
 
@@ -34,5 +36,10 @@ public class Student {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("Good bye, " + id);
     }
 }
